@@ -41,6 +41,9 @@ body{
 }
 .titleTwo {
     text-align: center;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .contenedor{
     width: 70rem;
@@ -56,5 +59,6 @@ body{
 
 .navegacionPrincipal a{
     background-color:rgb(112, 189, 189) ;
+    display: inline;
    
 }
