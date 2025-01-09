@@ -13,6 +13,7 @@ body{
     font-size: 16px;
     color: cyan;
     background-color: #0a0a0a;
+    font-family: 'IBM Plex Serif', serif;
 }
 .pantallaCompleta{
     height: 102vh; /* Ocupa el 100% de la altura de la pantalla */
@@ -20,10 +21,11 @@ body{
     flex-direction: column; /* Coloca los elementos uno debajo del otro */
     justify-content: center; /* Centra verticalmente */
     color: cyan; /* Color del texto */
+    
 }
 .title{
     margin-bottom: 0;
-    transform: translateX(-85px);
+    transform: translateX(-20px);
     text-align: center;
     font-size: 3rem;
     color:aqua;
@@ -41,9 +43,9 @@ body{
 }
 .titleTwo {
     text-align: center;
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 300;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    margin-top: 100;
 }
 .contenedor{
     width: 70rem;
@@ -51,14 +53,23 @@ body{
 }
 .navegacionPrincipal{
     background-color:rgb(58, 61, 61);
-   
+    padding: 0.8rem ;
+    display: flex;
+    justify-content: space-between;
 }
 .nav-bg{
     background-color:rgb(58, 61, 61) ;
+      /* Espacio interno */
 }
 
 .navegacionPrincipal a{
-    background-color:rgb(112, 189, 189) ;
-    display: inline;
-   
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
 }
+.ibm-plex-serif-extralight {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
