@@ -14,6 +14,9 @@ body{
     color: cyan;
     background-color: #0a0a0a;
     font-family: 'IBM Plex Serif', serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Activar desplazamiento suave */
 }
 .pantallaCompleta{
     height: 102vh; /* Ocupa el 100% de la altura de la pantalla */
@@ -24,7 +27,7 @@ body{
     
 }
 .title{
-    margin-bottom: 0;
+    margin-bottom: -20px; /* Reduce el espacio debajo del h3 */
     transform: translateX(-20px);
     text-align: center;
     font-size: 3rem;
@@ -34,7 +37,7 @@ body{
     font-style: normal;
 }
 .titleThre{
-    margin-top: 0;
+    margin-top: -10px;
     text-align: center;
     font-family: "IBM Plex Serif", serif;
     font-size: 8rem;
@@ -59,17 +62,45 @@ body{
 }
 .nav-bg{
     background-color:rgb(58, 61, 61) ;
-      /* Espacio interno */
+    
 }
+
 
 .navegacionPrincipal a{
     color: #ffffff;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-size: 2rem;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animación */
+   
+}
+.navegacionPrincipal a:hover {
+    
+    transform: scale(1.1); /* Aumenta el tamaño en un 20% */
 }
 .ibm-plex-serif-extralight {
     font-family: "IBM Plex Serif", serif;
     font-weight: 200;
     font-style: normal;
   }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los logos */
+    position: relative; /* Usa posición relativa */
+    top: -4px; /* Sube las imágenes 10px */
+    left: 210px;
+}
+.logos a img {
+    width: 20px; /* Cambia este valor para hacer los logos más pequeños */
+    height: auto; /* Mantén las proporciones originales de la imagen */
+   
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animación */
+}
+.logos a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    opacity: 20; /* Reduce ligeramente la opacidad */
+}
+
