@@ -1,11 +1,7 @@
 :root{
     --blanco:#ffffff;
     --oscuro:#212121;
-    
-
 }
-
-
 html{
     font-size: 62.5%;
 }
@@ -24,7 +20,6 @@ body{
     flex-direction: column; /* Coloca los elementos uno debajo del otro */
     justify-content: center; /* Centra verticalmente */
     color: cyan; /* Color del texto */
-    
 }
 .title{
     margin-bottom: -20px; /* Reduce el espacio debajo del h3 */
@@ -51,21 +46,25 @@ body{
     margin-top: 100;
 }
 .contenedor{
-    width: 70rem;
+    max-width: 70rem;
     margin: 0 auto ;
 }
-.navegacionPrincipal{
-    background-color:rgb(58, 61, 61);
-    padding: 0.8rem ;
-    display: flex;
-    justify-content: space-between;
-}
+
 .nav-bg{
     background-color:rgb(58, 61, 61) ;
     
 }
-
-
+.navegacionPrincipal{
+    background-color:rgb(58, 61, 61);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width: 780) {
+    .navegacionPrincipal{
+        flex-direction: column;
+    }
+}
 .navegacionPrincipal a{
     color: #ffffff;
     text-decoration: none;
@@ -78,6 +77,8 @@ body{
 .navegacionPrincipal a:hover {
     
     transform: scale(1.1); /* Aumenta el tamaño en un 20% */
+    background-color: aqua;
+    color: #212121;
 }
 .ibm-plex-serif-extralight {
     font-family: "IBM Plex Serif", serif;
@@ -85,7 +86,7 @@ body{
     font-style: normal;
   }
 
-  .logos {
+.logos {
     display: flex;
     justify-content: center;
     gap: 10px; /* Espaciado entre los logos */
@@ -99,8 +100,21 @@ body{
    
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animación */
 }
+@media (max-width: 780px) {
+    .logos {
+        top: 150px;
+        left: 0px; /* Centra los logos en pantallas más pequeñas */
+        gap: 20px;
+    }
+
+    .logos a img {
+        width: 35px; /* Ajusta el tamaño de los logos para pantallas medianas */
+    }
+}
+
 .logos a img:hover {
     transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
-    opacity: 20; /* Reduce ligeramente la opacidad */
+    opacity: .2; /* Reduce ligeramente la opacidad */
 }
+
 
