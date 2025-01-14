@@ -3,10 +3,10 @@
     --oscuro:#212121;
 }
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 body{
-    font-size: 16px;
+    font-size: 15px;
     color: cyan;
     background-color: #0a0a0a;
     font-family: 'IBM Plex Serif', serif;
@@ -14,6 +14,7 @@ body{
     padding: 0;
     scroll-behavior: smooth; /* Activar desplazamiento suave */
 }
+
 .pantallaCompleta{
     height: 102vh; /* Ocupa el 100% de la altura de la pantalla */
     display: flex; /* Centra los elementos */
@@ -21,6 +22,7 @@ body{
     justify-content: center; /* Centra verticalmente */
     color: cyan; /* Color del texto */
 }
+
 .title{
     margin-bottom: -20px; /* Reduce el espacio debajo del h3 */
     transform: translateX(-20px);
@@ -39,11 +41,25 @@ body{
     color:aqua;
     font-weight: 400;
 }
+@media (max-width: 780px) {
+    .title{
+        font-size: 2rem;
+    }
+    .titleThre{
+        font-size: 5rem;
+    }
+}
+
 .titleTwo {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
     margin-top: 100;
+}
+@media (max-width: 780px) {
+    .titleTwo{
+        font-size: 2rem;
+    }
 }
 .contenedor{
     max-width: 70rem;
@@ -60,9 +76,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-@media (max-width: 780) {
+@media (max-width: 780px) {
     .navegacionPrincipal{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
     }
 }
 .navegacionPrincipal a{
@@ -91,14 +110,19 @@ body{
     justify-content: center;
     gap: 10px; /* Espaciado entre los logos */
     position: relative; /* Usa posición relativa */
-    top: -4px; /* Sube las imágenes 10px */
-    left: 210px;
+    top: 100px; /* Sube las imágenes 10px */
+    left: 0px;
 }
 .logos a img {
     width: 20px; /* Cambia este valor para hacer los logos más pequeños */
     height: auto; /* Mantén las proporciones originales de la imagen */
    
     transition: transform 0.3s ease, opacity 0.3s ease; /* Animación */
+}
+
+.logos a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    opacity: .2; /* Reduce ligeramente la opacidad */
 }
 @media (max-width: 780px) {
     .logos {
@@ -112,9 +136,8 @@ body{
     }
 }
 
-.logos a img:hover {
-    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
-    opacity: .2; /* Reduce ligeramente la opacidad */
+@media (max-width: 780px) {
+    body{
+        size: 5px;
+    }
 }
-
-
